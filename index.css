@@ -171,3 +171,8 @@
       border: 2px #ffa3b1;
       border-radius: 5px;
   }
+  .dropdown-menu{
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
