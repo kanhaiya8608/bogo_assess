@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/index.css">
+  <title>Bogo</title>
+</head>
+<body>
+
+<div class="accordion">
+  <h1>YAY It's BOGO</h1>
+  <div class="accordion-item" onclick="toggleAccordionItem(this)">
+    <div class="accordion-header"> 
+      <div class="arrange">    
+        <div class="dot"></div>
+        <p>1 Unit <span>30% Off</span></p> 
+      </div>
+      <div class="price_row">
+        <p class="price">$10.00 USD</p>
+        <p class="discounted-price" style="font-size: smaller; text-decoration: line-through;">$24.00 USD</p>
+      </div>
+    </div>
+    <div class="accordion-content">
+      <table>
+        <tr>
+          <th>S.no</th>
+          <th>Size</th>
+          <th>Color</th>
+        </tr>
+        <tr>
+          <td class="sm_font">#1</td>
+          <td><select class="dropdown-menu">
+            <option>Select Size</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+          </select></td>
+          <td><select class="dropdown-menu">
+            <option>Select Color</option>
+            <option>Black</option>
+            <option>White</option>
+            <option>Red</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td class="sm_font">#2</td>
+          <td><select class="dropdown-menu">
+            <option>Select Size</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+          </select></td>
+          <td><select class="dropdown-menu">
+            <option>Select Color</option>
+            <option>Black</option>
+            <option>White</option>
+            <option>Red</option>
+          </select></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="accordion-item" onclick="toggleAccordionItem(this)">
+    <div class="accordion-header"> 
+      <div class="arrange">    
+        <div class="dot"></div>
+        <p>2 Unit <span>30% Off</span></p> 
+      </div>
+      <div class="price_row">
+        <p class="price">$18.00 USD</p>
+        <p class="discounted-price" style="font-size: smaller; text-decoration: line-through;">$24.00 USD</p>
+      </div>
+    </div>
+    <div class="accordion-content">
+      <table>
+        <tr>
+          <th>S.no</th>
+          <th>Size</th>
+          <th>Color</th>
+        </tr>
+        <tr>
+          <td class="sm_font">#1</td>
+          <td><select class="dropdown-menu">
+            <option>Select Size</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+          </select></td>
+          <td><select class="dropdown-menu">
+            <option>Select Color</option>
+            <option>Black</option>
+            <option>White</option>
+            <option>Red</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td class="sm_font">#2</td>
+          <td><select class="dropdown-menu">
+            <option>Select Size</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+          </select></td>
+          <td><select class="dropdown-menu">
+            <option>Select Color</option>
+            <option>Black</option>
+            <option>White</option>
+            <option>Red</option>
+          </select></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="accordion-item" onclick="toggleAccordionItem(this)">
+    <div class="accordion-header"> 
+      <div class="arrange">    
+        <div class="dot"></div>
+        <p>3 Unit <span>30% Off</span></p> 
+      </div>
+      <div class="price_row">
+        <p class="price">$24.00 USD</p>
+        <p class="discounted-price" style="font-size: smaller; text-decoration: line-through;">$24.00 USD</p>
+      </div>
+    </div>
+    <div class="accordion-content">
+      <table>
+        <tr>
+          <th>S.no</th>
+          <th>Size</th>
+          <th>Color</th>
+        </tr>
+        <tr>
+          <td class="sm_font">#1</td>
+          <td><select class="dropdown-menu">
+            <option>Select Size</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+          </select></td>
+          <td><select class="dropdown-menu">
+            <option>Select Color</option>
+            <option>Black</option>
+            <option>White</option>
+            <option>Red</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td class="sm_font">#2</td>
+          <td><select class="dropdown-menu">
+            <option>Select Size</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+          </select></td>
+          <td><select class="dropdown-menu">
+            <option>Select Color</option>
+            <option>Black</option>
+            <option>White</option>
+            <option>Red</option>
+          </select></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+<div class="del">
+    <p class="hed">Free Delivery</p>
+    <p>Total : <span class="price">$18.00 USD</span></p>
+</div>
+<button class="btn">+ Add to cart</button>
+</div>
+
+<script>
+    function toggleAccordionItem(item) {
+      item.classList.toggle("active");
+      var content = item.querySelector(".accordion-content");
+      content.style.display = item.classList.contains("active") ? "block" : "none";
+    }
+  
+    var dropdownMenus = document.querySelectorAll('.dropdown-menu');
+    dropdownMenus.forEach(function (dropdownMenu) {
+      dropdownMenu.addEventListener('click', function (event) {
+        event.stopPropagation(); 
+      });
+    });
+</script>
+
+</body>
+</html>
